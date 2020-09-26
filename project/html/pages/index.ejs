@@ -12,12 +12,19 @@
     <h1>Hello Fucking World</h1>
   </div>
 
-  <p>Click on the button for a surprise.</p>
+<button onclick="handleSignIn()">Login</button>
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
+<form onSubmit="handleMessageFromSubmit()" action="#">
+  Title:<br>
+  <input id="post-title"><br>
+  Body:<br>
+  <textarea id="post-body"></textarea><br>
+  <button>Submit</button>
 
-  <div id="image"></div>
-  
+</form>
+
+<div id="post-listing"></div>
+
 </body>
 
 </html>
